@@ -207,7 +207,7 @@ class WalletManager: ObservableObject {
     
     // MARK: - 检查并重置每日计数
     private func checkAndResetDailyCount() {
-        guard let wallet = wallet else { return }
+        guard var wallet = wallet else { return }
         
         let calendar = Calendar.current
         let today = Date()
@@ -247,13 +247,14 @@ class WalletManager: ObservableObject {
     }
     
     // MARK: - 获取钱包统计信息
-    var walletStats: (balance: Int, dailyEarned: Int, dailyRemaining: Int, streak: Int, bonusActive: Bool) {
+    var walletStats: (balance: Int, dailyEarned: Int, dailyRemaining: Int, streak: Int, bonusActive: Bool, totalEarned: Int) {
         let balance = wallet?.balance ?? 0
         let dailyEarned = wallet?.dailyEarned ?? 0
         let dailyRemaining = dailyCoinLimit - dailyEarned
         let streak = streakRecord?.currentStreak ?? 0
         let bonusActive = (streakRecord?.bonusMultiplier ?? 1.0) > 1.0
+        let totalEarned = wallet?.totalEarned ?? 0
         
-        return (balance, dailyEarned, dailyRemaining, streak, bonusActive)
+        return (balance, dailyEarned, dailyRemaining, streak, bonusActive, totalEarned)
     }
 }

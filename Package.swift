@@ -3,7 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "StudyGarden",
-    platforms: [.iOS(.v17)],
+    platforms: [
+        .iOS(.v17),
+        .macOS(.v11)
+    ],
     products: [
         .executable(name: "StudyGarden", targets: ["StudyGarden"])
     ],

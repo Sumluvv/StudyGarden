@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A42EC69967312B41094750 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 543F0C44547A99702D31AB0F /* GoogleService-Info.plist */; };
+		0F50941F5AB74D1B5D0353C3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A554FA0372DC9322EF708E90 /* App.swift */; };
+		13BB23E093BA6E91DF6826C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F92DB8D261E2D5C70CEE8EA /* GoogleService-Info.plist */; };
+		1D0B3863ACD5DEE3FBF585BF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA5C01B9BF41EA3D5565465E /* FirebaseCore */; };
+		266CA9D122E9DEC1CC6D4796 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8236030356008FEAF9F0F /* WalletManager.swift */; };
+		3B2CB10FDEF9E40048F878F0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA702DFA1C13A4F09D439D5 /* FirebaseFirestore */; };
+		448315B482A2D10F121C2DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407CD29975A7435ED1AE564 /* ViewController.swift */; };
+		60534F2752A0D71BF42A789D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F0D24A24B8E287E34ADF77 /* Info.plist */; };
+		61E57BBB260E2C744297E338 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4489AEF35B165B295737071 /* Wallet.swift */; };
+		64107A1C353B655D5D535C9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F92DB8D261E2D5C70CEE8EA /* GoogleService-Info.plist */; };
+		74CA3589A9CAB0027C29CB4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA873C13C41F4C5E842B04B /* ContentView.swift */; };
+		7EE3204E6861F74E627AB73C /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914C0E9AD9E1DD13D2B57D60 /* WalletView.swift */; };
+		82AB6CBE50E4D9B727655E0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA873C13C41F4C5E842B04B /* ContentView.swift */; };
+		8672533273C30AD772EAA5B8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4489AEF35B165B295737071 /* Wallet.swift */; };
+		B5DE5A643DEB10FABBA4C797 /* StudyGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD88C1E46FBD284350A2C97 /* StudyGardenApp.swift */; };
+		BAFC61CDB89E7D70F6685D45 /* StudyGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD88C1E46FBD284350A2C97 /* StudyGardenApp.swift */; };
+		D208D0DAC1FB25C866FB41AF /* Pods_StudyGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21570A91F2D3AF327543E5E0 /* Pods_StudyGarden.framework */; };
+		E0C447532BA4ABDA3E0E11BC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 43A2BA02FA40E5B05A6BCC01 /* FirebaseAuth */; };
+		EDBB5B4D47CA13A58B8D2557 /* StudyTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE5208C664D8B704A6C705 /* StudyTimerView.swift */; };
+		EFA99FC68923554ED3D24AB8 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914C0E9AD9E1DD13D2B57D60 /* WalletView.swift */; };
+		F68B47E133CF5F2B0624C675 /* StudyTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE5208C664D8B704A6C705 /* StudyTimerView.swift */; };
+		FA7D361CFFA2B53F7624B43E /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8236030356008FEAF9F0F /* WalletManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E7BD7072A433AF47DC5465D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1AAE38B0310E51BF1DE73657 /* StudyGarden-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyGarden-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD88C1E46FBD284350A2C97 /* StudyGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGardenApp.swift; sourceTree = "<group>"; };
+		21570A91F2D3AF327543E5E0 /* Pods_StudyGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F92DB8D261E2D5C70CEE8EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3407CD29975A7435ED1AE564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AA873C13C41F4C5E842B04B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DE59FA50F76FDC9DC98D7F7 /* Pods-StudyGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGarden.release.xcconfig"; path = "Target Support Files/Pods-StudyGarden/Pods-StudyGarden.release.xcconfig"; sourceTree = "<group>"; };
+		543F0C44547A99702D31AB0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6042CAA75D1AABF8C038FCCB /* StudyGarden.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StudyGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F0D24A24B8E287E34ADF77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8BDE5208C664D8B704A6C705 /* StudyTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTimerView.swift; sourceTree = "<group>"; };
+		914C0E9AD9E1DD13D2B57D60 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		A554FA0372DC9322EF708E90 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		BDA843920EEDA97C691D34BA /* Pods-StudyGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGarden.debug.xcconfig"; path = "Target Support Files/Pods-StudyGarden/Pods-StudyGarden.debug.xcconfig"; sourceTree = "<group>"; };
+		D4489AEF35B165B295737071 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		F0D8236030356008FEAF9F0F /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E0443EB41615E35AAF47E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D208D0DAC1FB25C866FB41AF /* Pods_StudyGarden.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5D25E2E78FD652C673579D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0B3863ACD5DEE3FBF585BF /* FirebaseCore in Frameworks */,
+				E0C447532BA4ABDA3E0E11BC /* FirebaseAuth in Frameworks */,
+				3B2CB10FDEF9E40048F878F0 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01646EC7A3FEC46BAA809249 = {
+			isa = PBXGroup;
+			children = (
+				2260DBF8C88614F013010195 /* macOS */,
+				40F4C80CF0D16C9A37F879B2 /* StudyGarden */,
+				1A0D7BA7EB86B8E675DD94D6 /* Products */,
+				C3ACE0DE0393376234A7F63C /* Pods */,
+				14DE75E1D5FFB1E0D37DD4E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14DE75E1D5FFB1E0D37DD4E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21570A91F2D3AF327543E5E0 /* Pods_StudyGarden.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A0D7BA7EB86B8E675DD94D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE38B0310E51BF1DE73657 /* StudyGarden-macOS.app */,
+				6042CAA75D1AABF8C038FCCB /* StudyGarden.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2260DBF8C88614F013010195 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A554FA0372DC9322EF708E90 /* App.swift */,
+				543F0C44547A99702D31AB0F /* GoogleService-Info.plist */,
+				65F0D24A24B8E287E34ADF77 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		40F4C80CF0D16C9A37F879B2 /* StudyGarden */ = {
+			isa = PBXGroup;
+			children = (
+				4AA873C13C41F4C5E842B04B /* ContentView.swift */,
+				2F92DB8D261E2D5C70CEE8EA /* GoogleService-Info.plist */,
+				0E7BD7072A433AF47DC5465D /* Info.plist */,
+				1CD88C1E46FBD284350A2C97 /* StudyGardenApp.swift */,
+				3407CD29975A7435ED1AE564 /* ViewController.swift */,
+				53D8E28C2C4AFFDEF10BA0AE /* Managers */,
+				48065133EEA65ACD17000E4F /* Models */,
+				C494F3917C4F1AAD66D1C8E4 /* Views */,
+			);
+			path = StudyGarden;
+			sourceTree = "<group>";
+		};
+		48065133EEA65ACD17000E4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4489AEF35B165B295737071 /* Wallet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53D8E28C2C4AFFDEF10BA0AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F0D8236030356008FEAF9F0F /* WalletManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C3ACE0DE0393376234A7F63C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDA843920EEDA97C691D34BA /* Pods-StudyGarden.debug.xcconfig */,
+				4DE59FA50F76FDC9DC98D7F7 /* Pods-StudyGarden.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C494F3917C4F1AAD66D1C8E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE5208C664D8B704A6C705 /* StudyTimerView.swift */,
+				914C0E9AD9E1DD13D2B57D60 /* WalletView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE9EE816918462AC6690F13 /* StudyGarden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CED7AA4E3A5C66C1FC1ED6 /* Build configuration list for PBXNativeTarget "StudyGarden" */;
+			buildPhases = (
+				5F6D0728643CEB691478F3C5 /* [CP] Check Pods Manifest.lock */,
+				D4B352E42DE0A98DEDDA8B4D /* Sources */,
+				270743E852CEABE02681E92E /* Resources */,
+				5E0443EB41615E35AAF47E9E /* Frameworks */,
+				78EEB6C201C75CFB2E494CD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyGarden;
+			productName = StudyGarden;
+			productReference = 6042CAA75D1AABF8C038FCCB /* StudyGarden.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2624D7FD667F55F27980174 /* StudyGarden-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF50B4D6C62246EECAEF3F4 /* Build configuration list for PBXNativeTarget "StudyGarden-macOS" */;
+			buildPhases = (
+				23550BA1749249D04DC398E7 /* Sources */,
+				12C1281613CD338C2042A0DA /* Resources */,
+				5E5D25E2E78FD652C673579D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StudyGarden-macOS";
+			packageProductDependencies = (
+				FA5C01B9BF41EA3D5565465E /* FirebaseCore */,
+				43A2BA02FA40E5B05A6BCC01 /* FirebaseAuth */,
+				4AA702DFA1C13A4F09D439D5 /* FirebaseFirestore */,
+			);
+			productName = "StudyGarden-macOS";
+			productReference = 1AAE38B0310E51BF1DE73657 /* StudyGarden-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B30430A4E28035B2281B16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = DF24E96B1DE618EA094455DC /* Build configuration list for PBXProject "StudyGarden" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 01646EC7A3FEC46BAA809249;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A40E6E729C431F8054B201D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1A0D7BA7EB86B8E675DD94D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE9EE816918462AC6690F13 /* StudyGarden */,
+				C2624D7FD667F55F27980174 /* StudyGarden-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12C1281613CD338C2042A0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64107A1C353B655D5D535C9C /* GoogleService-Info.plist in Resources */,
+				00A42EC69967312B41094750 /* GoogleService-Info.plist in Resources */,
+				60534F2752A0D71BF42A789D /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270743E852CEABE02681E92E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BB23E093BA6E91DF6826C8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F6D0728643CEB691478F3C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyGarden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78EEB6C201C75CFB2E494CD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyGarden/Pods-StudyGarden-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyGarden/Pods-StudyGarden-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudyGarden/Pods-StudyGarden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23550BA1749249D04DC398E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F50941F5AB74D1B5D0353C3 /* App.swift in Sources */,
+				74CA3589A9CAB0027C29CB4A /* ContentView.swift in Sources */,
+				BAFC61CDB89E7D70F6685D45 /* StudyGardenApp.swift in Sources */,
+				F68B47E133CF5F2B0624C675 /* StudyTimerView.swift in Sources */,
+				8672533273C30AD772EAA5B8 /* Wallet.swift in Sources */,
+				FA7D361CFFA2B53F7624B43E /* WalletManager.swift in Sources */,
+				EFA99FC68923554ED3D24AB8 /* WalletView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B352E42DE0A98DEDDA8B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AB6CBE50E4D9B727655E0A /* ContentView.swift in Sources */,
+				B5DE5A643DEB10FABBA4C797 /* StudyGardenApp.swift in Sources */,
+				EDBB5B4D47CA13A58B8D2557 /* StudyTimerView.swift in Sources */,
+				448315B482A2D10F121C2DF1 /* ViewController.swift in Sources */,
+				61E57BBB260E2C744297E338 /* Wallet.swift in Sources */,
+				266CA9D122E9DEC1CC6D4796 /* WalletManager.swift in Sources */,
+				7EE3204E6861F74E627AB73C /* WalletView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		16D9BD730B9926EADF9B62EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StudyGarden/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.StudyGarden.mac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2A1FD6D7F7705543DBE3D894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE59FA50F76FDC9DC98D7F7 /* Pods-StudyGarden.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudyGarden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.StudyGarden;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34FB42B9E4AE1CE63CA52DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA843920EEDA97C691D34BA /* Pods-StudyGarden.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudyGarden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.StudyGarden;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67B3E4233B6A61C5C9800705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StudyGarden/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.StudyGarden.mac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7A3DE5CF063B3868B7FFFE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DEE93FA03155103050D821F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF50B4D6C62246EECAEF3F4 /* Build configuration list for PBXNativeTarget "StudyGarden-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D9BD730B9926EADF9B62EA /* Debug */,
+				67B3E4233B6A61C5C9800705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		49CED7AA4E3A5C66C1FC1ED6 /* Build configuration list for PBXNativeTarget "StudyGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FB42B9E4AE1CE63CA52DB1 /* Debug */,
+				2A1FD6D7F7705543DBE3D894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF24E96B1DE618EA094455DC /* Build configuration list for PBXProject "StudyGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE93FA03155103050D821F3 /* Debug */,
+				7A3DE5CF063B3868B7FFFE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A40E6E729C431F8054B201D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43A2BA02FA40E5B05A6BCC01 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A40E6E729C431F8054B201D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4AA702DFA1C13A4F09D439D5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A40E6E729C431F8054B201D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA5C01B9BF41EA3D5565465E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A40E6E729C431F8054B201D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23B30430A4E28035B2281B16 /* Project object */;
+}

@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    // 统一的绿色主题
+    private let primaryGreen = Color(red: 0.4, green: 0.6, blue: 0.4, opacity: 0.9)
+    private let lightGreen = Color(red: 0.6, green: 0.8, blue: 0.6, opacity: 0.3)
+    
     var body: some View {
         TabView {
             StudyTimerView()
@@ -33,7 +37,16 @@ struct ContentView: View {
                     Text("排行")
                 }
         }
-        .accentColor(.green)
+        .accentColor(primaryGreen)
+        .onAppear {
+            // 设置TabBar背景色
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor(lightGreen)
+            
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
     }
 }
 

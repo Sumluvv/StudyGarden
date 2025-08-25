@@ -49,10 +49,10 @@ struct StudyRecord: Codable, Identifiable {
 struct StreakRecord: Codable, Identifiable {
     let id: String
     let userId: String
-    let currentStreak: Int // 当前连续天数
-    let longestStreak: Int // 最长连续天数
-    let lastStudyDate: Date // 最后学习日期
-    let bonusMultiplier: Double // 加成倍数（连续7天起1.1倍）
+    var currentStreak: Int // 当前连续天数
+    var longestStreak: Int // 最长连续天数
+    var lastStudyDate: Date // 最后学习日期
+    var bonusMultiplier: Double // 加成倍数（连续7天起1.1倍）
     
     init(userId: String) {
         self.id = UUID().uuidString

@@ -6,8 +6,22 @@ struct WalletView: View {
     @State private var studyStartTime: Date?
     @State private var isStudying = false
     
+    // 统一的绿色主题
+    private let primaryGreen = Color(red: 0.4, green: 0.6, blue: 0.4, opacity: 0.9)
+    private let secondaryGreen = Color(red: 0.5, green: 0.7, blue: 0.5, opacity: 0.7)
+    private let lightGreen = Color(red: 0.6, green: 0.8, blue: 0.6, opacity: 0.3)
+    private let darkGreen = Color(red: 0.3, green: 0.5, blue: 0.3, opacity: 0.8)
+    
     var body: some View {
-        NavigationView {
+        VStack(spacing: 0) {
+            // 标题居中显示
+            Text("我的钱包")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(darkGreen)
+                .padding(.top, 60) // 增加顶部间距避免摄像头遮挡
+                .padding(.bottom, 20)
+            
             ScrollView {
                 VStack(spacing: 20) {
                     // 钱包余额卡片
@@ -25,20 +39,20 @@ struct WalletView: View {
                     // 学习记录
                     studyRecordsSection
                 }
-                .padding()
+                .padding(.horizontal, 20)
+                .padding(.bottom, 100) // 增加底部间距避免底边栏遮挡
             }
-            .navigationTitle("我的钱包")
-            .onAppear {
-                // 模拟用户ID，实际应用中应该从认证系统获取
-                walletManager.initializeWallet(for: "demo_user_123")
+        }
+        .onAppear {
+            // 模拟用户ID，实际应用中应该从认证系统获取
+            walletManager.initializeWallet(for: "demo_user_123")
+        }
+        .alert("错误", isPresented: .constant(walletManager.errorMessage != nil)) {
+            Button("确定") {
+                walletManager.errorMessage = nil
             }
-            .alert("错误", isPresented: .constant(walletManager.errorMessage != nil)) {
-                Button("确定") {
-                    walletManager.errorMessage = nil
-                }
-            } message: {
-                Text(walletManager.errorMessage ?? "")
-            }
+        } message: {
+            Text(walletManager.errorMessage ?? "")
         }
     }
     
@@ -47,11 +61,12 @@ struct WalletView: View {
         VStack(spacing: 15) {
             HStack {
                 Image(systemName: "creditcard.fill")
-                    .foregroundColor(.yellow)
+                    .foregroundColor(darkGreen)
                     .font(.title2)
                 
                 Text("钱包余额")
                     .font(.headline)
+                    .foregroundColor(darkGreen)
                 
                 Spacer()
             }
@@ -59,11 +74,11 @@ struct WalletView: View {
             HStack {
                 Text("\(walletManager.walletStats.balance)")
                     .font(.system(size: 48, weight: .bold, design: .rounded))
-                    .foregroundColor(.primary)
+                    .foregroundColor(darkGreen)
                 
                 Text("金币")
                     .font(.title3)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                 
                 Spacer()
             }
@@ -71,14 +86,17 @@ struct WalletView: View {
             HStack {
                 Text("总获得: \(walletManager.walletStats.totalEarned) 金币")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                 
                 Spacer()
             }
         }
         .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(15)
+        .background(Color.white)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(primaryGreen, lineWidth: 2)
+        )
     }
     
     // MARK: - 连续打卡卡片
@@ -86,26 +104,27 @@ struct WalletView: View {
         VStack(spacing: 15) {
             HStack {
                 Image(systemName: "flame.fill")
-                    .foregroundColor(.orange)
+                    .foregroundColor(primaryGreen)
                     .font(.title2)
                 
                 Text("连续打卡")
                     .font(.headline)
+                    .foregroundColor(darkGreen)
                 
                 Spacer()
                 
                 if walletManager.walletStats.bonusActive {
                     HStack(spacing: 5) {
                         Image(systemName: "star.fill")
-                            .foregroundColor(.yellow)
+                            .foregroundColor(primaryGreen)
                             .font(.caption)
                         
                         Text("+10%加成")
                             .font(.caption)
-                            .foregroundColor(.orange)
+                            .foregroundColor(primaryGreen)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)
-                            .background(Color.orange.opacity(0.2))
+                            .background(lightGreen)
                             .cornerRadius(8)
                     }
                 }
@@ -114,11 +133,11 @@ struct WalletView: View {
             HStack {
                 Text("\(walletManager.walletStats.streak)")
                     .font(.system(size: 36, weight: .bold, design: .rounded))
-                    .foregroundColor(.orange)
+                    .foregroundColor(primaryGreen)
                 
                 Text("天")
                     .font(.title3)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                 
                 Spacer()
             }
@@ -126,14 +145,17 @@ struct WalletView: View {
             HStack {
                 Text("连续学习可获得金币加成")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                 
                 Spacer()
             }
         }
         .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(15)
+        .background(Color.white)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(primaryGreen, lineWidth: 2)
+        )
     }
     
     // MARK: - 今日进度卡片
@@ -141,11 +163,12 @@ struct WalletView: View {
         VStack(spacing: 15) {
             HStack {
                 Image(systemName: "calendar")
-                    .foregroundColor(.blue)
+                    .foregroundColor(primaryGreen)
                     .font(.title2)
                 
                 Text("今日进度")
                     .font(.headline)
+                    .foregroundColor(darkGreen)
                 
                 Spacer()
             }
@@ -154,30 +177,34 @@ struct WalletView: View {
                 HStack {
                     Text("已获得: \(walletManager.walletStats.dailyEarned) 金币")
                         .font(.subheadline)
+                        .foregroundColor(darkGreen)
                     
                     Spacer()
                     
                     Text("剩余: \(walletManager.walletStats.dailyRemaining) 金币")
                         .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(secondaryGreen)
                 }
                 
                 ProgressView(value: Double(walletManager.walletStats.dailyEarned), total: Double(80))
-                    .progressViewStyle(LinearProgressViewStyle(tint: .blue))
-                    .scaleEffect(x: 1, y: 2, anchor: .center)
+                    .progressViewStyle(LinearProgressViewStyle(tint: primaryGreen))
+                    .scaleEffect(x: 1, y: 1.5, anchor: .center)
             }
             
             HStack {
                 Text("每日上限: 80 金币")
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                 
                 Spacer()
             }
         }
         .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(15)
+        .background(Color.white)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(primaryGreen, lineWidth: 2)
+        )
     }
     
     // MARK: - 学习按钮
@@ -199,7 +226,7 @@ struct WalletView: View {
             .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .padding()
-            .background(isStudying ? Color.red : Color.green)
+            .background(isStudying ? darkGreen : primaryGreen)
             .cornerRadius(15)
         }
         .disabled(walletManager.isProcessing)
@@ -210,11 +237,12 @@ struct WalletView: View {
         VStack(alignment: .leading, spacing: 15) {
             HStack {
                 Image(systemName: "clock.fill")
-                    .foregroundColor(.purple)
+                    .foregroundColor(primaryGreen)
                     .font(.title2)
                 
                 Text("学习记录")
                     .font(.headline)
+                    .foregroundColor(darkGreen)
                 
                 Spacer()
             }
@@ -223,23 +251,27 @@ struct WalletView: View {
                 HStack {
                     ProgressView()
                         .scaleEffect(0.8)
+                        .progressViewStyle(CircularProgressViewStyle(tint: primaryGreen))
                     Text("处理中...")
                         .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(secondaryGreen)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
             } else {
                 Text("点击开始学习按钮开始记录学习时间")
                     .font(.subheadline)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(secondaryGreen)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding()
             }
         }
         .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(15)
+        .background(Color.white)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(primaryGreen, lineWidth: 2)
+        )
     }
     
     // MARK: - 开始学习

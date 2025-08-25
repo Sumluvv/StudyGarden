@@ -1,0 +1,45 @@
+name: StudyGarden
+options:
+  minimumXcodeGenVersion: 2.0.0
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: 10.22.0
+targets:
+  StudyGarden:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: StudyGarden
+    resources:
+      - path: StudyGarden/Assets.xcassets
+        optional: true
+      - path: StudyGarden/GoogleService-Info.plist
+        optional: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.StudyGarden
+
+  StudyGarden-macOS:
+    type: application
+    platform: macOS
+    deploymentTarget: "11.0"
+    sources:
+      - path: StudyGarden
+        excludes:
+          - AppDelegate.swift
+          - ViewController.swift
+          - Info.plist
+      - path: macOS
+    resources:
+      - path: macOS/GoogleService-Info.plist
+        optional: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.StudyGarden.mac
+    dependencies:
+      - package: Firebase
+        products:
+          - FirebaseCore
+          - FirebaseAuth
+          - FirebaseFirestore
+
